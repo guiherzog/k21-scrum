@@ -2,11 +2,70 @@ body{
 	background-color: #fff;
 }
 .header{
-	min-height: 200px;
+	min-height: 120px;
 	margin: 0 auto;
 	padding: 0;
+	width: 100%;
 }
 #logo-img{
 	float:right;
-	margin: 10px;
+	margin: 2%;
 }
+.slider{
+	min-height: 540px;
+	background-color: #132d3c;
+	background-image: url("../images/slider.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/gothambold.woff);
+}
+
+#text-slider{
+	position: absolute;
+  	top: 140px;
+  	left: 0;
+  	right: 0;
+  	color: #fff;
+  	font-family: gothambold;
+  	font-size: 5em;
+  	text-align: center;
+}
+
+/* Mobile First */
+body {
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-top: 1em; 
+  color: #504331
+}
+
+header {
+  text-align: center;
+  position: relative; }
+
+h1 {
+  font-size: 2.75em;
+  background: white;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: .25em; }
+
+h1:after {
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: .5em;
+  z-index: -1;
+  border-top: 1px solid #504331;
+  border-bottom: 1px solid #504331; }
+
+.links {
+  background: url(../images/map.png) bottom center no-repeat;
+  padding-bottom: 177px; }
