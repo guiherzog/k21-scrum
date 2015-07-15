@@ -1,0 +1,12 @@
+body{
+	background-color: #fff;
+}
+.header{
+	min-height: 200px;
+	margin: 0 auto;
+	padding: 0;
+}
+#logo-img{
+	float:right;
+	margin: 10px;
+}
