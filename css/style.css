@@ -1,6 +1,8 @@
 body{
 	background-color: #fff;
 }
+
+/* HEADER */
 .header{
 	min-height: 120px;
 	margin: 0 auto;
@@ -9,9 +11,11 @@ body{
 }
 #logo-img{
 	float:right;
-	margin: 2%;
-	max-width: 100%;
+	margin: 3%;
+	position: relative;
 }
+
+/* SLIDER */
 .slider{
 	min-height: 480px;
 	max-height: 100%;
@@ -23,37 +27,7 @@ body{
 	z-index: 1;
 }
 
-.content #content-text
-{
-	font-family: gothambook;
-	text-align: center;
-	color: #333;
-
-}
-
-/* FONTS */
-@font-face {
-    font-family: gothambold;
-    src: url(fonts/gothambold.woff);
-}
-@font-face {
-    font-family: gothamboook;
-    src: url(fonts/gothambook.woff);
-}
-
-
-#text-slider{
-	position: absolute;
-  	top: 41%;
-  	left: 0;
-  	right: 0;
-  	color: #fff;
-  	font-family: gothambold;
-  	text-align: center;
-}
-
 /* MENU */
-
 .menu ul {
 	list-style-type:none;
 	margin:-25px 0 0 0;
@@ -91,16 +65,69 @@ body{
 	background: #ff8842;
 }
 
+/* TEXT CONTENT */
+.content{
+	font-family: gothambook;
+	text-align: center;
+	margin-top: 5%;
+	width: 70%;
+	position: relative;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+#content-text-a h5{
+	font-size: 1.5vw;
+	color: #bababa;
+	letter-spacing: -1px;
+	margin-left: 10%;
+	margin-right: 10%
+	line-height: 2 ;
+}
+#content-text-b h5{
+	font-size: 1.5vw;
+	color: #bababa;
+	margin-top: 5%;
+	letter-spacing: -0.1vw;
+	
+}
+
+
+#text-slider{
+	position: absolute;
+  	top: 41%;
+  	left: 0;
+  	right: 0;
+  	color: #fff;
+  	font-family: gothambold;
+  	text-align: center;
+}
+
+
 /* TEXTS */
 h1 {
   font-size: 7vw;
 }
 h2 {
-  font-size: 5.0vh;
+  font-size: 5.0vw;
 }
 h3 {
-  font-size: 4.0vh;
+  font-size: 4.0vw;
 }
 p {
   font-size: 2vmin;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/gothambold.woff);
+}
+@font-face {
+    font-family: gothambook;
+    src: url(fonts/gothambook.woff);
+}
+@font-face {
+    font-family: notoserif-italic;
+    src: url(fonts/notoserif-italic.ttf);
 }
