@@ -86,52 +86,67 @@ body{
 	margin-top: 7%;
 	width: 100%;
 	position: relative;
+	font-size: 2vmax;
 
 }
 #content-text-a h5{
-	font-size: 2vmax;
-	color: #999;
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	letter-spacing: -1px;
+	color: #666;
+	width: 55%;
+	margin-left: 22.5%;
+	margin-right: 22.5%;
+	letter-spacing: -0.2px;
 	line-height: 140%;
 }
 #content-text-b h5{
-	font-size: 2vmax;
-	color: #999;
-	width: 80%;
-	margin: 5% 0 10% 10%;
-	letter-spacing: -1px;
+	color: #666;
+	width: 65%;
+	margin:5% 17.5% 5% 17.5%;
+	letter-spacing: -0.2px;
 	line-height: 140%;
 	
 }
 #content-text-contact h5
 {
-	font-size: 2vmax;
-	color: #000;
-	width: 80%;
-	margin: 5% 0 10% 10%;
+	color: #292929;
+	width: 60%;
+	margin-left:  20%;
+	margin-bottom: 5%;
 	font-family: notoserif;
+	line-height: 140%;
+}
+a:link {
+	color: #e4783a;
+	text-decoration: none;
 }
 
 /* DIVIDER */
 .row-divider{
-	height:2%;
+	height:1%;
 	width: 20%;
-	margin: 0 0 40% 40%;
+	margin-left: 40%;
+	margin-bottom: 5%;
 	background:#e4e4e4;
 }
 
 /* ICONS COMPLETE */
-.content-icons{
-	margin: 5%;
-}
+
 #text-icons-complete h1
 {
-	font-size: 5vmax;
-	color: #000;
+	font-size: 2.8vmax;
+	margin: 5%;
+	color: #292929;
+	letter-spacing: -1px;
 	font-family: gothambook;
+}
+.icon-img{
+	margin: 10px;
+}
+.icon-text{
+	font-family: notoserif;
+	font-size: 2vmax;
+	width: 70%;
+	color: #292929;
+	margin-left: 15%;
 }
 /*  SECTIONS  */
 .section {
@@ -162,31 +177,11 @@ body{
 	width: 49.2%;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
-}
 
 
-/* TEXTS */
-h1 {
-  font-size: 7vw;
-}
-h2 {
-  font-size: 5.0vw;
-}
-h3 {
-  font-size: 4.0vw;
-}
-p {
-  font-size: 2vmin;
+.footer{
+	min-height: 40px;
+	background-color: #033042;
 }
 
 
@@ -202,4 +197,45 @@ p {
 @font-face {
     font-family: notoserif;
     src: url(fonts/notoserif-italic.ttf);
+}
+
+/*  RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+@media only screen and (max-width: 750px) {
+
+	.content{
+		font-size: 2.5vmax;
+	}
+	.menu li:first-child a{
+		border-top-left-radius: 0px; 
+		border-bottom-left-radius: 0px;  
+	}
+
+	.menu li:last-child a{
+		border-top-right-radius: 0px; 
+		border-bottom-right-radius: 0px;  
+	}
+	.menu li a {
+		display:block;
+		min-width:200px;
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		font-family: gothambold;
+		font-size: 3vmin;
+		color: #fff;
+		background: #e47a3b;
+		text-decoration: none;
+		margin: -2px;
+	}
+		
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
