@@ -27,11 +27,24 @@ body{
 	z-index: 1;
 }
 
+/* SLIDER TEXT */
+#text-slider{
+	position: absolute;
+  	top: 42%;
+  	left: 0;
+  	right: 0;
+  	color: #fff;
+  	font-family: gothambold;
+  	text-align: center;
+  	font-size: 7vmin;
+}
+
 /* MENU */
 .menu ul {
 	list-style-type:none;
-	margin:-25px 0 0 0;
+	margin:-40px 0 10% 10%;
 	padding:0;
+	width: 80%;
 	text-align: center;
 	position: relative;
 	z-index: 2;
@@ -51,11 +64,12 @@ body{
 
 .menu li a {
 	display:block;
-	min-width:140px;
-	height: 50px;
+	min-width:150px;
+	height: 80px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 80px;
 	font-family: gothambold;
+	font-size: 3vmin;
 	color: #fff;
 	background: #e47a3b;
 	text-decoration: none;
@@ -69,38 +83,38 @@ body{
 .content{
 	font-family: gothambook;
 	text-align: center;
-	margin-top: 5%;
-	width: 70%;
+	margin-top: 7%;
+	width: 100%;
 	position: relative;
-	margin-left: 15%;
-	margin-right: 15%;
+
 }
 #content-text-a h5{
-	font-size: 1.5vw;
-	color: #bababa;
+	font-size: 2vmax;
+	color: #999;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
 	letter-spacing: -1px;
-	margin-left: 10%;
-	margin-right: 10%
-	line-height: 2 ;
+	line-height: 140%;
 }
 #content-text-b h5{
-	font-size: 1.5vw;
-	color: #bababa;
-	margin-top: 5%;
-	letter-spacing: -0.1vw;
+	font-size: 2vmax;
+	color: #999;
+	width: 80%;
+	margin: 5% 0 10% 10%;
+	letter-spacing: -1px;
+	line-height: 140%;
 	
 }
-
-
-#text-slider{
-	position: absolute;
-  	top: 41%;
-  	left: 0;
-  	right: 0;
-  	color: #fff;
-  	font-family: gothambold;
-  	text-align: center;
+#content-text-contact h5
+{
+	font-size: 2vw;
+	color: #000;
+	margin-top: 5%;
+	letter-spacing: -0.05vw;
+	font-family: notoserif;
 }
+
 
 
 /* TEXTS */
@@ -128,6 +142,6 @@ p {
     src: url(fonts/gothambook.woff);
 }
 @font-face {
-    font-family: notoserif-italic;
+    font-family: notoserif;
     src: url(fonts/notoserif-italic.ttf);
 }
