@@ -1,17 +1,32 @@
+
+/* 1. HEADER*/
+/* 2. SLIDER*/
+/* 3. MENU*/
+/* 4. CONTENT-TEXT*/
+/* 5. TESTIMONIALS */
+/* 6. LEARNING */
+/* 7. FOOTER */
+
+
 body{
 	background-color: #fff;
 }
 
+a:link {
+	color: #e4783a;
+	text-decoration: none;
+}
+
 /* HEADER */
 .header{
-	min-height: 120px;
+	min-height: 100px;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 }
 #logo-img{
 	float:right;
-	margin: 45px;
+	margin: 35px;
 	position: relative;
 }
 
@@ -33,10 +48,12 @@ body{
   	top: 42%;
   	left: 0;
   	right: 0;
+  	margin-left:5%;
+  	margin-right: 5%; 
   	color: #fff;
   	font-family: gothambold;
   	text-align: center;
-  	font-size: 7vmin;
+  	font-size: 6vmin;
 }
 
 /* MENU */
@@ -114,10 +131,7 @@ body{
 	font-family: notoserif;
 	line-height: 140%;
 }
-a:link {
-	color: #e4783a;
-	text-decoration: none;
-}
+
 
 /* DIVIDER */
 .row-divider{
@@ -147,6 +161,7 @@ a:link {
 	width: 70%;
 	color: #292929;
 	margin-left: 15%;
+	margin-bottom: 3%;
 }
 /*  SECTIONS  */
 .section {
@@ -163,11 +178,99 @@ a:link {
 }
 .col:first-child { margin-left: 0; }
 
+/*  COLUMN2 SETUP  */
+.col2 {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0;
+}
+.col2:first-child { margin-left: 0; }
+
 /*  GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
+
+
+/* TESTIMONIAL */
+.testimonial{
+	min-height: 100px;
+	background-color: #13394b;
+	padding-top: 7%;
+	color: #fff;
+	text-align: center;
+}
+.testimonial #title{
+	font-family: gothambold;
+	font-size: 3vmax;
+}
+.testimonial #subtitle{
+	font-family: gothambook;
+	font-size: 2.3vmax;
+}
+.learning{
+	text-align: center;
+	margin-top: 5%;
+}
+.learning #title h1
+{
+	font-size: 3vmax;
+	margin: 5% 0 2% 0;
+	color: #292929;
+	letter-spacing: -1px;
+	font-family: gothambold;
+}
+.learning #subtitle{
+	font-size: 2.5vmax;
+	margin: 0 20% 2% 20%;
+	width: 60%;
+	color: #292929;
+	letter-spacing: -1px;
+	font-family: gothambook;
+}
+
+.learning .icon-text{
+	font-family: notoserif;
+	font-size: 2vmax;
+	width: 70%;
+	color: #555;
+	margin-left: 15%;
+	margin-bottom: 3%;
+	letter-spacing: -0.2px;
+}
+
+.instructor{
+	margin: 5% 0 5% 15%;
+	width: 70%;
+}
+.instructor-info{
+	margin-top:17%;
+}
+.instructor #profile-pic{
+	margin-left: 12%;
+}
+.instructor #name{
+	margin-bottom: 2%;
+	font-family: gothambold;
+	font-size: 3.5vmin;
+}
+.instructor #description{
+	font-family: notoserif;
+	font-size: 2.5vmin;
+	margin-bottom: 3%;
+	line-height: 140%;
+}
+.instructor #email{
+	font-family: notoserif;
+	color: #e4783a;
+	font-size: 2.5vmin;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
 
 /*  GRID OF TWO  */
 .span_2_of_2 {
@@ -176,34 +279,29 @@ a:link {
 .span_1_of_2 {
 	width: 49.2%;
 }
-
-
-
+.span_1_of_2_instructor {
+	width: 49.2%;
+}
 .footer{
 	min-height: 40px;
 	background-color: #033042;
 }
 
 
-/* FONTS */
-@font-face {
-    font-family: gothambold;
-    src: url(fonts/gothambold.woff);
-}
-@font-face {
-    font-family: gothambook;
-    src: url(fonts/gothambook.woff);
-}
-@font-face {
-    font-family: notoserif;
-    src: url(fonts/notoserif-italic.ttf);
-}
-
 /*  RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.col2 {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
 
 @media only screen and (max-width: 480px) {
 	.col { 
 		margin: 1% 0 1% 0%;
+	}
+	.icon-text{
+		font-size: 2.9vmax;
 	}
 }
 @media only screen and (max-width: 750px) {
@@ -222,7 +320,7 @@ a:link {
 	}
 	.menu li a {
 		display:block;
-		min-width:200px;
+		min-width:210px;
 		height: 80px;
 		text-align: center;
 		line-height: 80px;
@@ -233,9 +331,49 @@ a:link {
 		text-decoration: none;
 		margin: -2px;
 	}
+	.icon-text{
+		font-size: 2.5vmax;
+	}
+	.span_1_of_2_instructor { width: 100%; }
+
+	.instructor #profile-pic
+	{
+		text-align:center; 
+		margin-top:0px; 
+		margin-bottom:0px; 
+		padding:0px;
+	}
+	.instructor #profile-pic img{
+		display: inline-block;
+	}
+	.instructor
+	{
+		position: relative;
+		text-align: center;
+	}
+	.instructor-info
+	{
+		margin-top: 2%;
+		text-align: center;
+	}
 		
 }
 
 @media only screen and (max-width: 480px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/gothambold.woff);
+}
+@font-face {
+    font-family: gothambook;
+    src: url(fonts/gothambook.woff);
+}
+@font-face {
+    font-family: notoserif;
+    src: url(fonts/notoserif-italic.ttf);
 }
