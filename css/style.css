@@ -11,7 +11,7 @@ body{
 }
 #logo-img{
 	float:right;
-	margin: 3%;
+	margin: 45px;
 	position: relative;
 }
 
@@ -108,13 +108,71 @@ body{
 }
 #content-text-contact h5
 {
-	font-size: 2vw;
+	font-size: 2vmax;
 	color: #000;
-	margin-top: 5%;
-	letter-spacing: -0.05vw;
+	width: 80%;
+	margin: 5% 0 10% 10%;
 	font-family: notoserif;
 }
 
+/* DIVIDER */
+.row-divider{
+	height:2%;
+	width: 20%;
+	margin: 0 0 40% 40%;
+	background:#e4e4e4;
+}
+
+/* ICONS COMPLETE */
+.content-icons{
+	margin: 5%;
+}
+#text-icons-complete h1
+{
+	font-size: 5vmax;
+	color: #000;
+	font-family: gothambook;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
 
 
 /* TEXTS */
