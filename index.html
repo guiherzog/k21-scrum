@@ -7,14 +7,18 @@
 		<!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	</head>
 	<body>
 	 <div class="header">
-	 	<img id="logo-img" src="images/logo.png">
+	 	<img id="logo-img" class="img-responsive" src="images/logo.png">
 	 </div>
-	 <div class="slider">
-	 	<h2 id="text-slider"> Aprenda Scrum e torne-se um Certified <br> ScrumMaster com quem sabe! </h2>
+ 	<div class="slider">
+	 	<img class="img-responsive center-block" width="1920" height="730" src="images/slider.png">
+		<div id="text-slider"> Aprenda Scrum e torne-se um Certified <br> ScrumMaster com quem sabe! </div>
 	 </div>
 	 <div class="menu">
 	 	<ul id="menu">
@@ -25,9 +29,9 @@
 		</ul>
 	 </div>
 	 <div class="content">
-	 	<div id="content-text-a"><h5>No programa Certified ScrumMaster (CSM) da Scrum Alliance, você irá aprender o que você precisa saber para para começar a utilizar o Scrum como um ScrumMaster ou membro do Time de Desenvolvimento.</h5></div>
-	 	<div id="content-text-b"><h5>Esse programa enfoca os fundamentos do framework Scrum, incluindo os papéis do Scrum, artefatos e eventos, de modo que você possa ser um membro efetivo de um Time de Scrum.</h5></div>
-	 	<div id="content-text-contact"><h5>Contate-nos em <a href="mailto">contato@k21.com.br</a> para informações, descontos para grupos ou aulas in-company!</h5></div>
+	 	<div id="content-text-a">No programa Certified ScrumMaster (CSM) da Scrum Alliance, você irá aprender o que você precisa saber para para começar a utilizar o Scrum como um ScrumMaster ou membro do Time de Desenvolvimento.</div>
+	 	<div id="content-text-b">Esse programa enfoca os fundamentos do framework Scrum, incluindo os papéis do Scrum, artefatos e eventos, de modo que você possa ser um membro efetivo de um Time de Scrum.</div>
+	 	<div id="content-text-contact">Contate-nos em <a href="mailto">contato@k21.com.br</a> para informações, descontos para grupos ou aulas in-company!</div>
 
 	 	<div class="row-divider"></div>
 
@@ -62,8 +66,8 @@
 	 	<div class="testimonial-text">
 	 		<div class="section group">
 				<div class="col span_1_of_3">
-					<div class="profile-img">
-	 					<img src="images/testimonial-profile.png">
+					<div class="profile-div">
+	 					<img id="pic" class="responsive-img"  src="images/testimonial-profile.png">
 	 				</div>
 				</div>
 				<div class="col span_2_of_3">
@@ -78,8 +82,8 @@
 	 	</div>
 	 </div>
 	 <div class="learning">
-	 		<div id="title"><h1>Aprendizado</h1></div>
-	 		<div id="subtitle"><h2>Através de dois dias intensos de exercícios interativos, você aprenderá, entre outros tópicos:</div>
+	 		<div id="title">Aprendizado</div>
+	 		<div id="subtitle">Através de dois dias intensos de exercícios interativos, você aprenderá, entre outros tópicos:</div>
 	 		<div class="section group">
 				<div class="col span_1_of_3">
 					<img class="icon-img" src="images/icons/postit.png">
@@ -127,7 +131,9 @@
 	 <div class="instructor">
 		<div class="section group">
 			<div class="col span_1_of_2">
-				<div id="profile-pic"> <img src="images/instructor.png"></div>
+				<div class="profile-div">
+					<img id="profile-pic" class="responsive-img" src="images/instructor.png">
+				</div>
 			</div>
 			<div class="col span_1_of_2">
 			 	<div class="instructor-info">

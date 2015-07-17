@@ -32,28 +32,24 @@ a:link {
 
 /* SLIDER */
 .slider{
-	min-height: 480px;
-	max-height: 100%;
 	background-color: #132d3c;
-	background-image: url("../images/slider.png");
-	background-repeat: repeat-x;
-	background-size: cover;
-	position: relative;
 	z-index: 1;
+	position: relative;
 }
 
 /* SLIDER TEXT */
 #text-slider{
 	position: absolute;
-  	top: 42%;
+	top: 35%;
   	left: 0;
   	right: 0;
   	margin-left:5%;
   	margin-right: 5%; 
+  	vertical-align: middle;
   	color: #fff;
   	font-family: gothambold;
   	text-align: center;
-  	font-size: 6vmin;
+  	font-size: 4vmax;
 }
 
 /* MENU */
@@ -106,7 +102,7 @@ a:link {
 	font-size: 2vmax;
 
 }
-#content-text-a h5{
+#content-text-a{
 	color: #666;
 	width: 55%;
 	margin-left: 22.5%;
@@ -114,7 +110,7 @@ a:link {
 	letter-spacing: -0.2px;
 	line-height: 140%;
 }
-#content-text-b h5{
+#content-text-b{
 	color: #666;
 	width: 65%;
 	margin:5% 17.5% 5% 17.5%;
@@ -122,7 +118,7 @@ a:link {
 	line-height: 140%;
 	
 }
-#content-text-contact h5
+#content-text-contact
 {
 	color: #292929;
 	width: 60%;
@@ -177,14 +173,6 @@ a:link {
 }
 .col:first-child { margin-left: 0; }
 
-/*  COLUMN2 SETUP  */
-.col2 {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 0;
-}
-.col2:first-child { margin-left: 0; }
-
 /*  GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
@@ -199,6 +187,7 @@ a:link {
 	padding-top: 7%;
 	color: #fff;
 	text-align: center;
+	background-image: url("../images/testimonial-bg.png");
 }
 .testimonial #title{
 	font-family: gothambold;
@@ -217,12 +206,19 @@ a:link {
 	font-size: 2vmax;
 }
 .testimonial-text .profile-img
-{
-	margin-left: 50%;
-	margin-top: 7%;
+{	
+	height: 200px;
+	float: right; 
+}
+.testimonial-text #pic{
+	max-height:100%;
+	max-width: 90%;
+	margin: 10%;
+	padding-right: 10%;
 }
 .testimonial-text #text
 {
+	margin-top: 5%;
 	font-family: notoserif;
 	margin-bottom: 2%;
 	width: 75%;
@@ -248,7 +244,7 @@ a:link {
 	text-align: center;
 	margin-top: 5%;
 }
-.learning #title h1
+.learning #title
 {
 	font-size: 3vmax;
 	margin: 5% 0 2% 0;
@@ -257,7 +253,7 @@ a:link {
 	font-family: gothambold;
 }
 .learning #subtitle{
-	font-size: 2.5vmax;
+	font-size: 2vmax;
 	margin: 0 20% 2% 20%;
 	width: 60%;
 	color: #292929;
@@ -279,12 +275,19 @@ a:link {
 	margin: 0 0 5% 15%;
 	width: 70%;
 }
-.instructor-info{
-	margin-top:17%;
+.instructor .profile-div
+{
+	height: 200px;
+	float: right; 
+}
+.instructor-info
+{
+	margin-top: 12%;
+	float: left;
 }
 .instructor #profile-pic{
-	margin-left: 50%;
-	margin-top: 15%;
+	max-height:120%;
+	max-width: 100%;
 }
 .instructor #name{
 	margin-bottom: 2%;
@@ -324,24 +327,77 @@ a:link {
 
 /*  RESPONSIVE */
 
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-}
 
 @media only screen and (max-width: 480px) {
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
 	.icon-text{
 		font-size: 2.9vmax;
 	}
-}
-@media only screen and (max-width: 750px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
 
-	.content{
-		font-size: 2.5vmax;
+	#text-slider{
+	  	font-size: 3vmin;
 	}
+	.menu li a{
+		font-size: 3.5vmin;
+		min-width:210px;
+	}
+	.instructor-info
+	{
+		margin-top: 12%;
+		text-align: center;
+	}
+	.instructor #profile-pic{
+		max-height:120%;
+		max-width: 100%;
+		text-align: center;
+	}
+	.instructor img{
+		margin-left: -15%;
+	}
+	.testimonial-text{
+		margin: 5%;
+		padding-bottom: 5%;
+		color:#fff;
+		text-align: center;
+		line-height: 140%;
+		font-size: 2vmax;
+	}
+	.testimonial-text #text
+	{
+		font-family: notoserif;
+		margin-bottom: 2%;
+		width: 100%
+	}
+	.testimonial-text .divider
+	{
+		height:0.5%;
+		width: 20%;
+		margin: 5% auto 5% auto;
+		background:#e4e4e4;
+	}
+	.testimonial-text #name
+	{
+		font-family: gothambook;
+		line-height: 100%;
+	}
+	.testimonial-text #company
+	{
+		font-family: gothambook;
+		font-size: 1.5vmax;
+	}
+	.testimonial-text #pic{
+		max-height:50%;
+		max-width: 50%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 750px){
+	
 	.menu li:first-child a{
 		border-top-left-radius: 0px; 
 		border-bottom-left-radius: 0px;  
@@ -351,18 +407,23 @@ a:link {
 		border-top-right-radius: 0px; 
 		border-bottom-right-radius: 0px;  
 	}
-	.menu li a {
-		min-width:210px;
+}
+@media only screen and (min-width: 480px) and (max-width: 750px) {
+
+	.content{
+		font-size: 2.5vmax;
 	}
 	.icon-text{
 		font-size: 2.5vmax;
 	}
-
+	#text-slider{
+	  	font-size: 4vmin;
+	}
+	.menu li a{
+		min-width:210px;
+		font-size: 2.5vmin;
+	}
 		
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
 
