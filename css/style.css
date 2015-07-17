@@ -86,7 +86,7 @@ a:link {
 	text-align: center;
 	line-height: 80px;
 	font-family: gothambold;
-	font-size: 3vmin;
+	font-size: 2vmin;
 	color: #fff;
 	background: #e47a3b;
 	text-decoration: none;
@@ -137,8 +137,7 @@ a:link {
 .row-divider{
 	height:1%;
 	width: 20%;
-	margin-left: 40%;
-	margin-bottom: 5%;
+	margin: 5% auto 5% 40%;
 	background:#e4e4e4;
 }
 
@@ -209,6 +208,42 @@ a:link {
 	font-family: gothambook;
 	font-size: 2.3vmax;
 }
+.testimonial-text{
+	margin: 5%;
+	padding-bottom: 5%;
+	color:#fff;
+	text-align: left;
+	line-height: 140%;
+	font-size: 2vmax;
+}
+.testimonial-text .profile-img
+{
+	margin-left: 50%;
+	margin-top: 7%;
+}
+.testimonial-text #text
+{
+	font-family: notoserif;
+	margin-bottom: 2%;
+	width: 75%;
+}
+.testimonial-text .divider
+{
+	height:0.5%;
+	width: 20%;
+	margin: 5% auto 5% 0;
+	background:#e4e4e4;
+}
+.testimonial-text #name
+{
+	font-family: gothambook;
+	line-height: 100%;
+}
+.testimonial-text #company
+{
+	font-family: gothambook;
+	font-size: 1.5vmax;
+}
 .learning{
 	text-align: center;
 	margin-top: 5%;
@@ -241,14 +276,15 @@ a:link {
 }
 
 .instructor{
-	margin: 5% 0 5% 15%;
+	margin: 0 0 5% 15%;
 	width: 70%;
 }
 .instructor-info{
 	margin-top:17%;
 }
 .instructor #profile-pic{
-	margin-left: 12%;
+	margin-left: 50%;
+	margin-top: 15%;
 }
 .instructor #name{
 	margin-bottom: 2%;
@@ -279,9 +315,7 @@ a:link {
 .span_1_of_2 {
 	width: 49.2%;
 }
-.span_1_of_2_instructor {
-	width: 49.2%;
-}
+
 .footer{
 	min-height: 40px;
 	background-color: #033042;
@@ -292,7 +326,6 @@ a:link {
 
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.col2 {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
@@ -319,43 +352,12 @@ a:link {
 		border-bottom-right-radius: 0px;  
 	}
 	.menu li a {
-		display:block;
 		min-width:210px;
-		height: 80px;
-		text-align: center;
-		line-height: 80px;
-		font-family: gothambold;
-		font-size: 3vmin;
-		color: #fff;
-		background: #e47a3b;
-		text-decoration: none;
-		margin: -2px;
 	}
 	.icon-text{
 		font-size: 2.5vmax;
 	}
-	.span_1_of_2_instructor { width: 100%; }
 
-	.instructor #profile-pic
-	{
-		text-align:center; 
-		margin-top:0px; 
-		margin-bottom:0px; 
-		padding:0px;
-	}
-	.instructor #profile-pic img{
-		display: inline-block;
-	}
-	.instructor
-	{
-		position: relative;
-		text-align: center;
-	}
-	.instructor-info
-	{
-		margin-top: 2%;
-		text-align: center;
-	}
 		
 }
 
