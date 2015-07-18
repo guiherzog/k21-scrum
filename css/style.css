@@ -10,6 +10,7 @@
 
 body{
 	background-color: #fff;
+	height: 100%;
 }
 
 a:link {
@@ -19,15 +20,13 @@ a:link {
 
 /* HEADER */
 .header{
-	min-height: 100px;
-	margin: 0 auto;
-	padding: 0;
-	width: 100%;
+	padding: 3%;
+	text-align: right;
 }
 #logo-img{
-	float:right;
-	margin: 35px;
-	position: relative;
+     vertical-align: middle;
+     margin: 0 auto;
+     margin-right: 2%;
 }
 
 /* SLIDER */
@@ -78,9 +77,9 @@ a:link {
 .menu li a {
 	display:block;
 	min-width:150px;
-	height: 80px;
+	height: 60px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 60px;
 	font-family: gothambold;
 	font-size: 2vmin;
 	color: #fff;
@@ -188,6 +187,7 @@ a:link {
 	color: #fff;
 	text-align: center;
 	background-image: url("../images/testimonial-bg.png");
+
 }
 .testimonial #title{
 	font-family: gothambold;
@@ -197,8 +197,62 @@ a:link {
 	font-family: gothambook;
 	font-size: 2.3vmax;
 }
+.testimonial .container-img
+{
+	min-height: 700px;
+	padding-top: 5%;
+	position: relative;
+}
+.testimonial #img1{
+	position: absolute;
+  	left: 10%;
+  	max-width: 40%;
+  	z-index: 3;
+  	-moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+}
+.testimonial #img2{
+	max-width: 30%;
+	position: absolute;
+  	right:10%;
+  	z-index: 3;
+  	-moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+}
+.testimonial #img3{
+	max-width: 50%;
+	position: absolute;
+  	top:30%;
+  	left:25%;
+  	z-index: 4;
+  	-moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+}
+.testimonial #img4{
+	max-width: 30%;
+	position: absolute;
+  	left:4%;
+  	top:70%;
+  	z-index: 5;
+  	-moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+}
+.testimonial #img5{
+	max-width: 40%;
+	position: absolute;
+  	right:4%;
+  	top:50%;
+  	z-index: 3;
+  	-moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+}
 .testimonial-text{
-	margin: 5%;
+	margin: 12%;
 	padding-bottom: 5%;
 	color:#fff;
 	text-align: left;
@@ -222,6 +276,8 @@ a:link {
 	font-family: notoserif;
 	margin-bottom: 2%;
 	width: 75%;
+	background-image: url("../images/quot.png");
+	background-repeat: no-repeat;
 }
 .testimonial-text .divider
 {
@@ -246,14 +302,14 @@ a:link {
 }
 .learning #title
 {
-	font-size: 3vmax;
-	margin: 5% 0 2% 0;
+	font-size: 7vw;
+	margin: 10% 0 5% 0;
 	color: #292929;
 	letter-spacing: -1px;
 	font-family: gothambold;
 }
 .learning #subtitle{
-	font-size: 2vmax;
+	font-size: 5vw;
 	margin: 0 20% 2% 20%;
 	width: 60%;
 	color: #292929;
@@ -275,35 +331,39 @@ a:link {
 	margin: 0 0 5% 15%;
 	width: 70%;
 }
-.instructor .profile-div
+.instructor .info
 {
-	height: 200px;
-	float: right; 
-}
-.instructor-info
-{
-	margin-top: 12%;
 	float: left;
+	vertical-align: middle;
+	margin-top: 7%;
+}
+.instructor .profile-div
+{	
+	max-height:100%;
+	max-width: 90%;
+	margin: 10%;
+	padding-right: 10%;
 }
 .instructor #profile-pic{
 	max-height:120%;
 	max-width: 100%;
+	margin-left: 25%;
 }
 .instructor #name{
 	margin-bottom: 2%;
 	font-family: gothambold;
-	font-size: 3.5vmin;
+	font-size: 3.5vw;
 }
 .instructor #description{
 	font-family: notoserif;
-	font-size: 2.5vmin;
+	font-size: 2.5vw;
 	margin-bottom: 3%;
 	line-height: 140%;
 }
 .instructor #email{
 	font-family: notoserif;
 	color: #e4783a;
-	font-size: 2.5vmin;
+	font-size: 2vw;
 }
 
 /*  GRID OF THREE  */
@@ -327,16 +387,19 @@ a:link {
 
 /*  RESPONSIVE */
 
-
 @media only screen and (max-width: 480px) {
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-	.col { 
-		margin: 1% 0 1% 0%;
+	#logo-img{
+		max-height:50%;
+		max-width: 50%;
+		margin: 0 auto;
+		padding: 3%;
+	}
+	.learning .icon-text{
+		font-size: 4vw;
 	}
 	.icon-text{
-		font-size: 2.9vmax;
+		font-size: 4vw;
 	}
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
 
 	#text-slider{
 	  	font-size: 3vmin;
@@ -345,26 +408,15 @@ a:link {
 		font-size: 3.5vmin;
 		min-width:210px;
 	}
-	.instructor-info
-	{
-		margin-top: 12%;
-		text-align: center;
-	}
-	.instructor #profile-pic{
-		max-height:120%;
-		max-width: 100%;
-		text-align: center;
-	}
-	.instructor img{
-		margin-left: -15%;
-	}
+
+	/* TESTIMONIAL */
 	.testimonial-text{
 		margin: 5%;
 		padding-bottom: 5%;
 		color:#fff;
 		text-align: center;
 		line-height: 140%;
-		font-size: 2vmax;
+		font-size: 4vw;
 	}
 	.testimonial-text #text
 	{
@@ -387,7 +439,7 @@ a:link {
 	.testimonial-text #company
 	{
 		font-family: gothambook;
-		font-size: 1.5vmax;
+		font-size: 3vw;
 	}
 	.testimonial-text #pic{
 		max-height:50%;
@@ -395,17 +447,44 @@ a:link {
 		margin: 0 auto;
 		padding: 0;
 	}
+	/* --- END TESTIMONIAL --- */
+	/* Trainer Info */
+	.instructor .info
+	{
+		text-align: center;
+		margin: 0 auto;
+	}
+	.instructor #profile-pic{
+		max-height:80%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.instructor .profile-div{
+		padding: 3%;
+		text-align: center;
+		position: relative;
+		float: none;
+		margin:0 auto;
+		max-width: 100%;
+	}
+
+	/* ---- END TRAINER INFO ---*/
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
 }
 @media only screen and (max-width: 750px){
 	
 	.menu li:first-child a{
-		border-top-left-radius: 0px; 
-		border-bottom-left-radius: 0px;  
+		border-top-left-radius: 3px; 
+		border-top-right-radius: 3px;  
 	}
 
 	.menu li:last-child a{
-		border-top-right-radius: 0px; 
-		border-bottom-right-radius: 0px;  
+		border-bottom-left-radius: 3px; 
+		border-bottom-right-radius: 3px;  
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 750px) {

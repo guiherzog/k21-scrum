@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   		<script type="text/javascript" src="js/script.js"></script>
   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	</head>
@@ -23,12 +24,12 @@
 	 <div class="menu">
 	 	<ul id="menu">
 			<li><a href="#intro">Introdução</a></li>
-			<li><a href="#testimonials">Depoimentos</a></li>
+			<li><a href="#testimonial">Depoimentos</a></li>
 			<li><a href="#learning">Aprendizado</a></li>
 			<li><a href="#trainer">Trainer</a></li>
 		</ul>
 	 </div>
-	 <div class="content">
+	 <div name="intro" class="content">
 	 	<div id="content-text-a">No programa Certified ScrumMaster (CSM) da Scrum Alliance, você irá aprender o que você precisa saber para para começar a utilizar o Scrum como um ScrumMaster ou membro do Time de Desenvolvimento.</div>
 	 	<div id="content-text-b">Esse programa enfoca os fundamentos do framework Scrum, incluindo os papéis do Scrum, artefatos e eventos, de modo que você possa ser um membro efetivo de um Time de Scrum.</div>
 	 	<div id="content-text-contact">Contate-nos em <a href="mailto">contato@k21.com.br</a> para informações, descontos para grupos ou aulas in-company!</div>
@@ -59,10 +60,16 @@
 			</div>
 	 	</div>
 	 </div>
-	 <div class="testimonial">
+	 <div name="testimonial" class="testimonial">
 	 	<div id="title">Depoimentos</div>
 	 	<div id="subtitle">Veja como funciona na prática:</div>
-	 	<div class="testimonial-images"></div>
+	 	<div class="container-img">
+	 		<img id="img1" src="images/testimonials/img3.png">
+	 		<img id="img2" src="images/testimonials/img4.png">
+	 		<img id="img3" src="images/testimonials/img2.png">
+	 		<img id="img4" src="images/testimonials/img1.png">
+	 		<img id="img5" src="images/testimonials/img5.png">
+	 	</div>
 	 	<div class="testimonial-text">
 	 		<div class="section group">
 				<div class="col span_1_of_3">
@@ -81,7 +88,7 @@
 			</div>
 	 	</div>
 	 </div>
-	 <div class="learning">
+	 <div name="learning" class="learning">
 	 		<div id="title">Aprendizado</div>
 	 		<div id="subtitle">Através de dois dias intensos de exercícios interativos, você aprenderá, entre outros tópicos:</div>
 	 		<div class="section group">
@@ -128,7 +135,7 @@
 			</div>							 	
 	 </div>
 	 <div class="row-divider"></div>
-	 <div class="instructor">
+	 <div name="trainer" class="instructor">
 		<div class="section group">
 			<div class="col span_1_of_2">
 				<div class="profile-div">
@@ -136,7 +143,7 @@
 				</div>
 			</div>
 			<div class="col span_1_of_2">
-			 	<div class="instructor-info">
+			 	<div class="info">
 		 			<div id="name">Marcos Garrido</div>
 		 			<div id="description">é instrutor oficial da Scrum Alliance (Certified Scrum Trainer – CST) e Certified Scrum Coach (CSC)</div>
 		 			<div id="email"><strong>mgarrido@k21.com.br</strong></div>
