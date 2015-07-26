@@ -199,8 +199,8 @@ a:link {
 }
 .testimonial .container-img
 {
-	min-height: 700px;
-	max-height: 700px;
+	min-height: 650px;
+	max-height: 650px;
 	padding-top: 5%;
 	position: relative;
 }
@@ -253,7 +253,8 @@ a:link {
 	box-shadow: 0 0 20px #000;
 }
 .testimonial-text{
-	margin: 12%;
+	margin-left: 12%;
+	margin-top: 3%;
 	padding-bottom: 5%;
 	color:#fff;
 	text-align: left;
@@ -510,6 +511,13 @@ a:link {
 	{
 		max-height: 1100px;
 		min-height: 1100px;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+	.testimonial .container-img
+	{
+		max-height: 900px;
+		min-height: 900px;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 750px) {
