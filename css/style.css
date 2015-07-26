@@ -200,6 +200,7 @@ a:link {
 .testimonial .container-img
 {
 	min-height: 700px;
+	max-height: 700px;
 	padding-top: 5%;
 	position: relative;
 }
@@ -309,7 +310,7 @@ a:link {
 	font-family: gothambold;
 }
 .learning #subtitle{
-	font-size: 5vw;
+	font-size: 3vw;
 	margin: 0 20% 2% 20%;
 	width: 60%;
 	color: #292929;
@@ -394,8 +395,17 @@ a:link {
 		margin: 0 auto;
 		padding: 3%;
 	}
+	.testimonial .container-img
+	{
+		max-height: 400px;
+		min-height: 400px;
+	}
 	.learning .icon-text{
 		font-size: 4vw;
+	}
+	.learning #subtitle
+	{
+		font-size: 5vw;
 	}
 	.icon-text{
 		font-size: 4vw;
@@ -485,6 +495,24 @@ a:link {
 	.menu li:last-child a{
 		border-bottom-left-radius: 3px; 
 		border-bottom-right-radius: 3px;  
+	}
+
+	.testimonial .container-img
+	{
+		max-height: 500px;
+		min-height: 500px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	
+	.menu li a{
+		font-size: 3.5vmin;
+		min-width:300px;
+	}
+	.testimonial .container-img
+	{
+		max-height: 1100px;
+		min-height: 1100px;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 750px) {
