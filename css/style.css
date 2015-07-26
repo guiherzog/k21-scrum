@@ -508,6 +508,8 @@ a:link {
 	.menu li a{
 		font-size: 3.5vmin;
 		min-width:300px;
+		min-height: 120px;
+		line-height: 120px;
 	}
 	.testimonial .container-img
 	{
