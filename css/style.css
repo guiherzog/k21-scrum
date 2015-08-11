@@ -48,6 +48,7 @@ a:link {
   	color: #fff;
   	font-family: gothambold;
   	text-align: center;
+  	font-size: 200%;
   	font-size: 4vmax;
 }
 
@@ -81,6 +82,7 @@ a:link {
 	text-align: center;
 	line-height: 60px;
 	font-family: gothambold;
+	font-size: 200%;
 	font-size: 2vmin;
 	color: #fff;
 	background: #e47a3b;
@@ -93,7 +95,7 @@ a:link {
 
 /* TEXT CONTENT */
 .content{
-	font-family: gothambook;
+	font-family: GothamRBook;
 	text-align: center;
 	margin-top: 7%;
 	width: 100%;
@@ -144,12 +146,12 @@ a:link {
 	margin: 5%;
 	color: #292929;
 	letter-spacing: -1px;
-	font-family: gothambook;
+	font-family: GothamRBook;
 }
-.icon-img{
+.bullet-img{
 	margin: 10px;
 }
-.icon-text{
+.bullet-text{
 	font-family: notoserif;
 	font-size: 2vmax;
 	width: 70%;
@@ -194,7 +196,7 @@ a:link {
 	font-size: 3vmax;
 }
 .testimonial #subtitle{
-	font-family: gothambook;
+	font-family: GothamRBook;
 	font-size: 2.3vmax;
 }
 .testimonial .container-img
@@ -259,6 +261,7 @@ a:link {
 	color:#fff;
 	text-align: left;
 	line-height: 140%;
+	font-size: 200%;
 	font-size: 2vmax;
 }
 .testimonial-text .profile-img
@@ -290,12 +293,12 @@ a:link {
 }
 .testimonial-text #name
 {
-	font-family: gothambook;
+	font-family: GothamRBook;
 	line-height: 100%;
 }
 .testimonial-text #company
 {
-	font-family: gothambook;
+	font-family: GothamRBook;
 	font-size: 1.5vmax;
 }
 .learning{
@@ -316,10 +319,10 @@ a:link {
 	width: 60%;
 	color: #292929;
 	letter-spacing: -1px;
-	font-family: gothambook;
+	font-family: GothamRBook;
 }
 
-.learning .icon-text{
+.learning .bullet-text{
 	font-family: notoserif;
 	font-size: 2vmax;
 	width: 70%;
@@ -401,14 +404,14 @@ a:link {
 		max-height: 350px;
 		min-height: 350px;
 	}
-	.learning .icon-text{
+	.learning .bullet-text{
 		font-size: 4vw;
 	}
 	.learning #subtitle
 	{
 		font-size: 5vw;
 	}
-	.icon-text{
+	.bullet-text{
 		font-size: 4vw;
 	}
 
@@ -444,12 +447,12 @@ a:link {
 	}
 	.testimonial-text #name
 	{
-		font-family: gothambook;
+		font-family: GothamRBook;
 		line-height: 100%;
 	}
 	.testimonial-text #company
 	{
-		font-family: gothambook;
+		font-family: GothamRBook;
 		font-size: 3vw;
 	}
 	.testimonial-text #pic{
@@ -525,7 +528,7 @@ a:link {
 	.content{
 		font-size: 2.5vmax;
 	}
-	.icon-text{
+	.bullet-text{
 		font-size: 2.5vmax;
 	}
 	#text-slider{
@@ -542,19 +545,4 @@ a:link {
 		min-height: 500px;
 	}
 		
-}
-
-
-/* FONTS */
-@font-face {
-    font-family: gothambold;
-    src: url(fonts/gothambold.woff);
-}
-@font-face {
-    font-family: gothambook;
-    src: url(fonts/gothambook.woff);
-}
-@font-face {
-    font-family: notoserif;
-    src: url(fonts/notoserif-italic.ttf);
 }
